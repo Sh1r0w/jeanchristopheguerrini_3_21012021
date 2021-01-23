@@ -25,35 +25,41 @@ body {
 .logofood {
     margin-top: 25px;
     margin-bottom: 10px;
-    width:45%;
+    width: 40%;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
+
 /*-- header --*/
 
-.header{
+.header {
     text-align: center;
-    background: $bg-color; 
-    padding-bottom: 60px; 
-    .recherche{
+    background: $bg-color;
+    padding-bottom: 60px;
+
+    .recherche {
+        position: relative;
         padding: 15px 0 15px 0;
         margin-bottom: 40px;
         background: $color-search;
         box-shadow: inset 5px 15px 5px -15px grey;
         font-weight: 500;
-        .fas{
+
+        .fas {
+            position:absolute;
             padding-right: 10px;
+            margin-left: -30px;
         }
     }
 }
 
-.txtrecherche
-{
+.txtrecherche {
     margin: 0px 8px 0 8px;
     font-size: 1.1rem;
     font-weight: 300;
-    h1{
+
+    h1 {
         font-size: 1.5rem;
         margin: 0px 50px -5px 50px;
         font-weight: 700;
@@ -71,67 +77,155 @@ body {
         color: white;
         margin-top: 10px;
         cursor: $cursor;
-        text-align:center;
-        @include mobile{
-            text-align:center;
+        text-align: center;
+
+        @include mobile {
+            text-align: center;
         }
     }
 
 }
+
 /*-- fonctionnement --*/
 
-section{
+section {
     margin-left: 20px;
     margin-top: 28px;
-    h2{
+    margin-bottom: 40px;
+
+    h2 {
         padding-bottom: 10px;
     }
 }
-.fonction{
+
+.fonction {
     display: flex;
     background: $bg-color;
     margin-bottom: 25px;
-    padding:10px;
+    padding: 10px;
     width: 88%;
     border-radius: 20px;
-    box-shadow:$shadow-box;
-    .fa-circle{
+    box-shadow: $shadow-box;
+
+    .fa-circle {
         position: absolute;
         font-size: 150%;
         margin-top: 15px;
-        margin-left:-20px;
+        margin-left: -20px;
         color: $primary-color;
     }
-    .number{
-        color:white;
-        margin-left:-13px;
+
+    .number {
+        color: white;
+        margin-left: -13px;
         margin-top: 18px;
         z-index: 1;
         font-weight: 300;
     }
-    .icone{
-        color:$color-icone;
+
+    .icone {
+        color: $color-icone;
         margin-left: 25px;
         margin-top: 18px;
         font-size: 1.2rem;
     }
-    p{
+
+    p {
         margin-left: 20px;
         margin-top: 18px;
         font-weight: 600;
     }
-    .fa-store{
-        color:$primary-color;
+
+    .fa-store {
+        color: $primary-color;
     }
-    
+
 }
 
-.colorer{
+.colorer {
     background: $primary-lighten-color;
 }
 
 /*-- restaurant --*/
 
-article{
+article {
     background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+
+    h2 {
+        margin-top: 55px;
+        margin-left: 20px;
+    }
+    .fenetre_restaurant{
+        position: relative;
+        border-radius: 15px;
+        background:white;
+        margin: 0 20px 20px 20px;
+        height: 250px;
+        box-shadow:$shadow-box;
+        img{
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+            height: 175px;
+            margin-bottom: -8px;
+        }
+    }
+    .new{
+        position: absolute;
+        right:20px;
+        background: $terciaire-color;
+        color: darken($terciaire-color, 40%);
+        padding: 5px 10px 5px 10px;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .far{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        font-size: 1.5rem;
+    }
+    p{
+        margin-left: 10px;
+        margin-bottom: -15px;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+    .titre_restaurants{
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+}
+
+/*-- footer --*/
+footer{
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background: $footer-color;
+    color: white;
+    .logo-footer{
+        width: 25%;
+        margin-bottom: 5px;
+    }
+    li {
+        padding-bottom: 9px;
+        margin-left: -35px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        font-weight: 300;
+    }
+    .fas{
+        font-size: 0.8rem;
+        width:4%;
+        margin-right: 10px;
+    }
 }

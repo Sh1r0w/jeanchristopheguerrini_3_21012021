@@ -7,6 +7,10 @@ body {
   flex-direction: column;
 }
 
+h2 {
+  font-weight: 800;
+}
+
 .fenetre_restaurant img {
   width: 100%;
 }
@@ -21,7 +25,7 @@ body {
 .logofood {
   margin-top: 25px;
   margin-bottom: 10px;
-  width: 45%;
+  width: 40%;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -34,6 +38,7 @@ body {
   padding-bottom: 60px;
 }
 .header .recherche {
+  position: relative;
   padding: 15px 0 15px 0;
   margin-bottom: 40px;
   background: #eaeaea;
@@ -41,7 +46,9 @@ body {
   font-weight: 500;
 }
 .header .recherche .fas {
+  position: absolute;
   padding-right: 10px;
+  margin-left: -30px;
 }
 
 .txtrecherche {
@@ -78,6 +85,7 @@ body {
 section {
   margin-left: 20px;
   margin-top: 28px;
+  margin-bottom: 40px;
 }
 section h2 {
   padding-bottom: 10px;
@@ -128,6 +136,83 @@ section h2 {
 /*-- restaurant --*/
 article {
   background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 45px;
+}
+article h2 {
+  margin-top: 55px;
+  margin-left: 20px;
+}
+article .fenetre_restaurant {
+  position: relative;
+  border-radius: 15px;
+  background: white;
+  margin: 0 20px 20px 20px;
+  height: 250px;
+  box-shadow: 0px 5px 10px lightgrey;
+}
+article .fenetre_restaurant img {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  height: 175px;
+  margin-bottom: -8px;
+}
+article .new {
+  position: absolute;
+  right: 20px;
+  background: #99E2D0;
+  color: #278870;
+  padding: 5px 10px 5px 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+article .far {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 1.5rem;
+}
+article p {
+  margin-left: 10px;
+  margin-bottom: -15px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+article .titre_restaurants {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+/*-- footer --*/
+footer {
+  padding-left: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #353535;
+  color: white;
+}
+footer .logo-footer {
+  width: 25%;
+  margin-bottom: 5px;
+}
+footer li {
+  padding-bottom: 9px;
+  margin-left: -35px;
+}
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+footer .fas {
+  font-size: 0.8rem;
+  width: 4%;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
