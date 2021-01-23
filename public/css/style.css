@@ -155,6 +155,7 @@ article .fenetre_restaurant {
 article .fenetre_restaurant img {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+  object-position: 50% 60%;
   height: 175px;
   margin-bottom: -8px;
 }
