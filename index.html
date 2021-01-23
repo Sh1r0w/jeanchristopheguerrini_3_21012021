@@ -5,53 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ohmyfood le menu qui vous convient !">
-    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <script src="https://kit.fontawesome.com/44fb54bebd.js"></script>
     <title>ohmyfood</title>
 </head>
 
 <body>
+    <img src="images/logo/ohmyfood@2x.svg" alt="Votre menu idéal" class="logofood">
     <!-- Titre et recherche -->
     <header class="header">
-        <img src="images/logo/ohmyfood@2x.svg" alt="Votre menu idéal" class="logofood">
         <form method="post">
             <div class="recherche">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="text" placeholder="Paris, Belleville">
+                <span>Paris, Belleville</span>
             </div>
             <div class="txtrecherche">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p> Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             </div>
-            <input type="submit" value="Explorer nos resturants">
+            <div class="btn btn-explore">
+                <p>Explorer nos restaurants</p>
+            </div>
         </form>
     </header>
     <!-- Boutons -->
     <section>
         <h2>Fonctionnement</h2>
-        <div class="btn-fonction">
-            <a href="#">
+        <div class="fonction">
                 <i class="fas fa-circle"></i>
                 <p>1</p>
                 <i class="fas fa-mobile-alt"></i>
                 <p>Choisissez un restaurant</p>
-            </a>
         </div>
-        <div class="btn-fonction">
-            <a href="#">
+        <div class="fonction">
                 <i class="fas fa-circle"></i>
                 <p>2</p>
                 <i class="fas fa-list-ul"></i>
                 <p>Composez votre menu</p>
-            </a>
         </div>
-        <div class="btn-fonction">
-            <a href="#">
+        <div class="fonction">
                 <i class="fas fa-circle"></i>
                 <p>3</p>
                 <i class="fas fa-store"></i>
                 <p>Dégustez au restaurant</p>
-            </a>
         </div>
     </section>
     <!-- Restaurants -->
