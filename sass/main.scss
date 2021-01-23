@@ -84,6 +84,54 @@ section{
     margin-left: 20px;
     margin-top: 28px;
     h2{
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
+}
+.fonction{
+    display: flex;
+    background: $bg-color;
+    margin-bottom: 25px;
+    padding:10px;
+    width: 88%;
+    border-radius: 20px;
+    box-shadow:$shadow-box;
+    .fa-circle{
+        position: absolute;
+        font-size: 150%;
+        margin-top: 15px;
+        margin-left:-20px;
+        color: $primary-color;
+    }
+    .number{
+        color:white;
+        margin-left:-13px;
+        margin-top: 18px;
+        z-index: 1;
+        font-weight: 300;
+    }
+    .icone{
+        color:$color-icone;
+        margin-left: 25px;
+        margin-top: 18px;
+        font-size: 1.2rem;
+    }
+    p{
+        margin-left: 20px;
+        margin-top: 18px;
+        font-weight: 600;
+    }
+    .fa-store{
+        color:$primary-color;
+    }
+    
+}
+
+.colorer{
+    background: $primary-lighten-color;
+}
+
+/*-- restaurant --*/
+
+article{
+    background-color: $bg-color;
 }
