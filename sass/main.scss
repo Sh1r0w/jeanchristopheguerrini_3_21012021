@@ -23,9 +23,9 @@ body {
 }
 
 .logofood {
-    margin-top: 20px;
-    margin-bottom: 15px;
-    width:50%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width:45%;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -50,12 +50,13 @@ body {
 
 .txtrecherche
 {
-    margin: 0px 10px 0 10px;
-    font-size: 1.05rem;
+    margin: 0px 8px 0 8px;
+    font-size: 1.1rem;
     font-weight: 300;
     h1{
         font-size: 1.5rem;
-        margin: 0px 20px -5px 20px;
+        margin: 0px 50px -5px 50px;
+        font-weight: 700;
     }
 }
 
@@ -76,4 +77,13 @@ body {
         }
     }
 
+}
+/*-- fonctionnement --*/
+
+section{
+    margin-left: 20px;
+    margin-top: 28px;
+    h2{
+        padding-bottom: 20px;
+    }
 }
