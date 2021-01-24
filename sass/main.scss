@@ -47,7 +47,7 @@ body {
         font-weight: 500;
 
         .fas {
-            position:absolute;
+            position: absolute;
             padding-right: 10px;
             margin-left: -30px;
         }
@@ -79,10 +79,12 @@ body {
         cursor: $cursor;
         text-align: center;
         transition: opacity 0.3s;
-        &:hover{
-        opacity: 0.80;
-        box-shadow: 0px 10px 15px lightgrey;
-         }
+
+        &:hover {
+            opacity: 0.80;
+            box-shadow: 0px 10px 15px lightgrey;
+        }
+
         @include mobile {
             text-align: center;
         }
@@ -162,14 +164,16 @@ article {
         margin-top: 55px;
         margin-left: 20px;
     }
-    .fenetre_restaurant{
+
+    .fenetre_restaurant {
         position: relative;
         border-radius: 15px;
-        background:white;
+        background: white;
         margin: 0 20px 20px 20px;
         height: 250px;
-        box-shadow:$shadow-box;
-        img{
+        box-shadow: $shadow-box;
+
+        img {
             border-radius: 15px 15px 0 0;
             object-fit: cover;
             object-position: 50% 60%;
@@ -177,61 +181,70 @@ article {
             margin-bottom: -8px;
         }
     }
-    .new{
+
+    .new {
         position: absolute;
-        right:20px;
+        right: 20px;
         background: $terciaire-color;
         color: darken($terciaire-color, 40%);
         padding: 5px 10px 5px 10px;
         font-size: 0.9rem;
         font-weight: 500;
     }
-    .far{
+
+    .far {
         position: absolute;
         right: 30px;
         bottom: 30px;
         font-size: 1.5rem;
     }
-    p{
+
+    p {
         margin-left: 10px;
         margin-bottom: -15px;
         font-size: 1.1rem;
         font-weight: 300;
     }
-    .titre_restaurants{
+
+    .titre_restaurants {
         font-weight: 900;
         font-size: 1.2rem;
     }
 }
 
 /*-- footer --*/
-footer{
+footer {
     padding-left: 20px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     background: $footer-color;
     color: white;
-    .logo-footer{
+
+    .logo-footer {
         width: 25%;
         margin-bottom: 5px;
         filter: invert(1);
     }
+
     li {
         padding-bottom: 9px;
         margin-left: -35px;
     }
-    ul{
+
+    ul {
         list-style-type: none;
     }
-    a{
+
+    a {
         text-decoration: none;
-        color:white;
+        color: white;
         font-weight: 300;
     }
-    .fas{
+
+    .fas {
         font-size: 0.8rem;
-        width:4%;
+        width: 4%;
         margin-right: 10px;
     }
 }
