@@ -74,6 +74,11 @@ h2 {
   margin-top: 10px;
   cursor: pointer;
   text-align: center;
+  transition: opacity 0.3s;
+}
+.btn-explore:hover {
+  opacity: 0.8;
+  box-shadow: 0px 10px 15px lightgrey;
 }
 @media screen and (max-width: 767px) {
   .btn-explore {
@@ -197,6 +202,7 @@ footer {
 footer .logo-footer {
   width: 25%;
   margin-bottom: 5px;
+  filter: invert(1);
 }
 footer li {
   padding-bottom: 9px;
