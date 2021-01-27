@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   font-family: "roboto", "sans-serif";
   display: flex;
@@ -7,12 +8,23 @@ body {
   flex-direction: column;
 }
 
-h2 {
+h3 {
   font-weight: 800;
+}
+
+.logofood, .titrefiche {
+  font-family: Shrikhand, sans-serif;
 }
 
 .fenetre_restaurant img {
   width: 100%;
+}
+
+.carte-restaurant img {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*--body--*/
@@ -22,22 +34,41 @@ h2 {
   }
 }
 
-.logofood {
-  margin-top: 25px;
-  margin-bottom: 10px;
-  width: 40%;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+header {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  header {
+    position: relative;
+  }
+}
+header .logofood {
+  font-size: 32px;
+  font-weight: 400;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.1em;
+}
+header .fas {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  color: black;
+  font-size: 110%;
+}
+@media screen and (min-width: 1200px) {
+  header .fas {
+    left: 10px;
+    top: 20px;
+  }
 }
 
 /*-- header --*/
-.header {
+.emplacement {
   text-align: center;
   background: #f6f6f6;
   padding-bottom: 60px;
 }
-.header .recherche {
+.emplacement .recherche {
   position: relative;
   padding: 15px 0 15px 0;
   margin-bottom: 40px;
@@ -45,7 +76,7 @@ h2 {
   box-shadow: inset 5px 15px 5px -15px grey;
   font-weight: 500;
 }
-.header .recherche .fas {
+.emplacement .recherche .fas {
   position: absolute;
   padding-right: 10px;
   margin-left: -30px;
@@ -56,7 +87,7 @@ h2 {
   font-size: 1.1rem;
   font-weight: 300;
 }
-.txtrecherche h1 {
+.txtrecherche h2 {
   font-size: 1.5rem;
   margin: 0px 50px -5px 50px;
   font-weight: 700;
@@ -74,11 +105,11 @@ h2 {
   margin-top: 10px;
   cursor: pointer;
   text-align: center;
-  transition: opacity 0.3s;
+  transition: all 0.3s;
 }
 .btn-explore:hover {
-  opacity: 0.8;
-  box-shadow: 0px 10px 15px lightgrey;
+  opacity: 0.85;
+  box-shadow: 0px 10px 10px lightgrey;
 }
 @media screen and (max-width: 767px) {
   .btn-explore {
@@ -87,12 +118,12 @@ h2 {
 }
 
 /*-- fonctionnement --*/
-section {
-  margin-left: 20px;
+.fonctionnement {
   margin-top: 28px;
   margin-bottom: 40px;
+  margin-left: 20px;
 }
-section h2 {
+.fonctionnement h2 {
   padding-bottom: 10px;
 }
 
@@ -149,6 +180,10 @@ article h2 {
   margin-top: 55px;
   margin-left: 20px;
 }
+article a {
+  text-decoration: none;
+  color: black;
+}
 article .fenetre_restaurant {
   position: relative;
   border-radius: 15px;
@@ -199,10 +234,8 @@ footer {
   background: #353535;
   color: white;
 }
-footer .logo-footer {
-  width: 25%;
-  margin-bottom: 5px;
-  filter: invert(1);
+footer .logofood {
+  font-size: 20px;
 }
 footer li {
   padding-bottom: 9px;
@@ -220,6 +253,28 @@ footer .fas {
   font-size: 0.8rem;
   width: 4%;
   margin-right: 10px;
+}
+
+/* -- Carte restaurant --*/
+.carte-restaurant {
+  position: relative;
+}
+
+article {
+  position: relative;
+}
+article .menu {
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+}
+article .menu .far {
+  top: 35px;
+}
+article .titrefiche {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
