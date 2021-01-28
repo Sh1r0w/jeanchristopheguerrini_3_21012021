@@ -282,7 +282,7 @@ footer .fas {
   top: 25px;
   margin-left: 10px;
 }
-.carte .menu .far {
+.carte .menu .fa-heart {
   top: 35px;
 }
 .carte .menu h2 {
@@ -319,10 +319,30 @@ footer .fas {
   position: relative;
   background: #fff;
   margin: 12px 10px 14px 5px;
+  cursor: pointer;
   padding: 10px 10px 10px 10px;
   width: auto;
   border-radius: 15px;
   box-shadow: 0px 5px 10px lightgrey;
+}
+.plat .fa-check-circle {
+  position: absolute;
+  font-size: 1.3rem;
+  right: 0px;
+  top: 0px;
+  background: #99E2D0;
+  color: #fff;
+  padding: 25px 25px 45px 25px;
+  border-radius: 0 15px 15px 0px;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+.plat:hover .fa-check-circle {
+  transform: rotate(360deg);
+  display: initial;
+}
+.plat:hover .prx-plat p {
+  right: 80px;
 }
 .plat .txt-plat h3 {
   margin: 0;

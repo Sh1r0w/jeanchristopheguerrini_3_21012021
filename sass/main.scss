@@ -270,7 +270,7 @@ footer {
         top: 25px;
         margin-left: 10px;
 
-        .far {
+        .fa-heart {
             top: 35px;
         }
 
@@ -314,11 +314,31 @@ footer {
     position: relative;
     background: #fff;
     margin: 12px 10px 14px 5px;
-    ;
+    cursor: pointer;
     padding: 10px 10px 10px 10px;
     width: auto;
     border-radius: 15px;
     box-shadow: $shadow-box;
+    .fa-check-circle{
+        position: absolute;
+        font-size: 1.3rem;
+        right: 0px;
+        top: 0px;
+        background: $terciaire-color;
+        color:#fff;
+        padding: 25px 25px 45px 25px;
+        border-radius: 0 15px 15px 0px;
+        display: none;
+        transition: all 1s ease-in-out;
+
+    }
+    &:hover .fa-check-circle{
+        transform: rotate(360deg);
+        display: initial;
+    }
+    &:hover .prx-plat p{
+        right: 80px;
+    }
 
     .txt-plat {
 
