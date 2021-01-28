@@ -262,19 +262,34 @@ footer .fas {
 
 article {
   position: relative;
+  top: -50px;
+  border-radius: 40px 40px 0 0;
+  background: #f6f6f6;
 }
 article .menu {
   width: 100%;
-  background: #f6f6f6;
-  border-radius: 40px 40px 0 0;
 }
 article .menu .far {
   top: 35px;
+}
+article hr {
+  border: 1px solid #99E2D0;
+  border-width: 2px;
+  width: 38px;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 article .titrefiche {
   font-size: 28px;
   font-weight: 400;
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sous-menu p {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
