@@ -16,13 +16,44 @@ h3 {
   font-family: Shrikhand, sans-serif;
 }
 
+.btn-commander, .btn-explore {
+  box-shadow: 0px 5px 10px lightgrey;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 0px 20px 0 20px;
+  background: linear-gradient(#FF79DA, #9356dc);
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+}
+.btn-commander:hover, .btn-explore:hover {
+  opacity: 0.85;
+  box-shadow: 0px 15px 15px lightgrey;
+}
+@media screen and (max-width: 767px) {
+  .btn-commander, .btn-explore {
+    text-align: center;
+  }
+}
+
+.commande {
+  text-align: center;
+}
+.commande .btn-commander p {
+  margin: 16px 0 16px 0;
+  padding: 0 20px 0 20px;
+  font-weight: 400;
+}
+
 .fenetre_restaurant img {
   width: 100%;
 }
 
 .carte-restaurant img {
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 280px;
   width: 100%;
   object-fit: cover;
 }
@@ -91,30 +122,6 @@ header .fas {
   font-size: 1.5rem;
   margin: 0px 50px -5px 50px;
   font-weight: 700;
-}
-
-.btn {
-  box-shadow: 0px 5px 10px lightgrey;
-}
-.btn-explore {
-  display: inline-block;
-  border-radius: 50px;
-  padding: 0px 20px 0 20px;
-  background: linear-gradient(#FF79DA, #9356dc);
-  color: white;
-  margin-top: 10px;
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.3s;
-}
-.btn-explore:hover {
-  opacity: 0.85;
-  box-shadow: 0px 10px 10px lightgrey;
-}
-@media screen and (max-width: 767px) {
-  .btn-explore {
-    text-align: center;
-  }
 }
 
 /*-- fonctionnement --*/
@@ -259,23 +266,33 @@ footer .fas {
 .carte-restaurant {
   position: relative;
 }
+.carte-restaurant footer {
+  margin-top: -50px;
+}
 
 article {
+  width: 100%;
   position: relative;
   top: -50px;
   border-radius: 40px 40px 0 0;
   background: #f6f6f6;
 }
 article .menu {
-  width: 100%;
+  width: auto;
+  top: 25px;
+  margin-left: 10px;
 }
 article .menu .far {
   top: 35px;
 }
+article .menu h2 {
+  margin-left: 10px;
+  width: auto;
+}
 article hr {
   border: 1px solid #99E2D0;
   border-width: 2px;
-  width: 38px;
+  width: 40px;
   margin-left: 10px;
   margin-top: 15px;
 }
@@ -286,10 +303,46 @@ article .titrefiche {
   margin-bottom: 30px;
 }
 
+.sous-menu {
+  margin-bottom: 35px;
+}
 .sous-menu p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   padding-bottom: 5px;
+}
+.sous-menu hr {
+  margin-bottom: 15px;
+}
+
+.plat {
+  position: relative;
+  background: #fff;
+  margin: 12px 10px 14px 5px;
+  padding: 10px 10px 10px 10px;
+  width: auto;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px lightgrey;
+}
+.plat .txt-plat h3 {
+  margin: 0;
+  font-weight: 500;
+}
+.plat .txt-plat p {
+  margin: 0;
+  font-size: 15px;
+  margin-top: 3px;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat .prx-plat p {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
