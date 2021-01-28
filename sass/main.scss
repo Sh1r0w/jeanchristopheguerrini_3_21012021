@@ -85,31 +85,7 @@ header {
     }
 }
 
-.btn {
-    box-shadow: $shadow-box;
 
-    &-explore {
-        display: inline-block;
-        border-radius: 50px;
-        padding: 0px 20px 0 20px;
-        background: linear-gradient($linear);
-        color: white;
-        margin-top: 10px;
-        cursor: $cursor;
-        text-align: center;
-        transition: all 0.3s;
-
-        &:hover {
-            opacity: 0.85;
-            box-shadow: 0px 10px 10px lightgrey;
-        }
-
-        @include mobile {
-            text-align: center;
-        }
-    }
-
-}
 
 /*-- fonctionnement --*/
 
@@ -276,29 +252,41 @@ footer {
 
 .carte-restaurant {
     position: relative;
+
+    footer {
+        margin-top: -50px;
+    }
 }
 
 article {
+    width: 100%;
     position: relative;
     top: -50px;
     border-radius: 40px 40px 0 0;
     background: $bg-color;
 
     .menu {
-        width: 100%;
+        width: auto;
+        top: 25px;
+        margin-left: 10px;
 
         .far {
             top: 35px;
         }
-}
 
-hr{
-    border: 1px solid $terciaire-color;
-    border-width: 2px;
-    width: 38px;
-    margin-left: 10px;
-    margin-top: 15px;
-}
+        h2 {
+            margin-left: 10px;
+            width: auto;
+        }
+    }
+
+    hr {
+        border: 1px solid $terciaire-color;
+        border-width: 2px;
+        width: 40px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
 
     .titrefiche {
         font-size: 28px;
@@ -309,9 +297,55 @@ hr{
 }
 
 .sous-menu {
+    margin-bottom: 35px;
+
     p {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
-        padding-bottom: 5px ;
+        padding-bottom: 5px;
+    }
+
+    hr {
+        margin-bottom: 15px;
+    }
+}
+
+.plat {
+    position: relative;
+    background: #fff;
+    margin: 12px 10px 14px 5px;
+    ;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    border-radius: 15px;
+    box-shadow: $shadow-box;
+
+    .txt-plat {
+
+        h3 {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 0;
+            font-size: 15px;
+            margin-top: 3px;
+            max-width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    }
+
+    .prx-plat {
+        p {
+            position: absolute;
+            right: 20px;
+            bottom: 25px;
+            font-size: 15px;
+            font-weight: 600;
+        }
     }
 }
