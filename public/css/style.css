@@ -215,7 +215,7 @@ article .new {
   font-size: 0.9rem;
   font-weight: 500;
 }
-article .far {
+article .fa-heart {
   position: absolute;
   right: 30px;
   bottom: 30px;
@@ -236,7 +236,6 @@ article .titre_restaurants {
 footer {
   padding-left: 20px;
   padding-top: 20px;
-  display: flex;
   flex-direction: column;
   background: #353535;
   color: white;
@@ -281,6 +280,7 @@ footer .fas {
   width: auto;
   top: 25px;
   margin-left: 10px;
+  margin-right: 10px;
 }
 .carte .menu .fa-heart {
   top: 35px;
@@ -316,6 +316,7 @@ footer .fas {
 }
 
 .plat {
+  display: flex;
   position: relative;
   background: #fff;
   margin: 12px 10px 14px 5px;
@@ -324,45 +325,52 @@ footer .fas {
   width: auto;
   border-radius: 15px;
   box-shadow: 0px 5px 10px lightgrey;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  justify-content: space-between;
 }
-.plat .fa-check-circle {
-  position: absolute;
-  font-size: 1.3rem;
-  right: 0px;
-  top: 0px;
-  background: #99E2D0;
-  color: #fff;
-  padding: 25px 25px 45px 25px;
-  border-radius: 0 15px 15px 0px;
-  display: none;
-  transition: all 1s ease-in-out;
-}
-.plat:hover .fa-check-circle {
-  transform: rotate(360deg);
-  display: initial;
-}
-.plat:hover .prx-plat p {
-  right: 80px;
-}
-.plat .txt-plat h3 {
-  margin: 0;
-  font-weight: 500;
-}
-.plat .txt-plat p {
-  margin: 0;
-  font-size: 15px;
-  margin-top: 3px;
-  max-width: 80%;
-  white-space: nowrap;
+.plat .txt-plat h3, .plat .txt-plat p {
+  flex-wrap: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 5px 0 0px 0;
 }
 .plat .prx-plat p {
   position: absolute;
-  right: 20px;
-  bottom: 25px;
-  font-size: 15px;
-  font-weight: 600;
+  right: 10px;
+  bottom: 20px;
+  font-weight: 700;
+  transition: all 0.8s;
+}
+.plat:hover .prx-plat p {
+  right: 70px;
+}
+.plat:hover .fa-check-circle {
+  transform: rotate(360deg);
+  transform-origin: right 50% center;
+}
+.plat:hover .anim-bg {
+  transform-origin: right 100%;
+  transform: scale(1, 1);
+}
+.plat .anim-bg {
+  position: absolute;
+  background: #99E2D0;
+  padding: 30px 15px 30px 25px;
+  top: 0;
+  right: 0px;
+  transform: translate(90px);
+  transition: all 0.8s;
+}
+
+.fa-check-circle {
+  position: relative;
+  font-size: 1.5rem;
+  right: 5px;
+  bottom: 3px;
+  color: #fff;
+  transition: all 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
