@@ -194,9 +194,13 @@ article {
 
     .fa-heart {
         position: absolute;
+        cursor: pointer;
         right: 30px;
         bottom: 30px;
         font-size: 1.5rem;
+        transition: all 0.8s;
+        background-color: linear-gradient($linear);
+        &:hover {}
     }
 
     p {
@@ -264,6 +268,7 @@ footer {
     border-radius: 40px 40px 0 0;
     background: $bg-color;
 
+
     .menu {
         width: auto;
         top: 25px;
@@ -312,7 +317,6 @@ footer {
 }
 
 .plat {
-    display: flex;
     position: relative;
     background: #fff;
     margin: 12px 10px 14px 5px;
@@ -326,50 +330,81 @@ footer {
     max-width: 100%;
     justify-content: space-between;
 
-    .txt-plat{
-         h3, p{
-        flex-wrap: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin: 5px 0 0px 0;        
+    .txt-plat {
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+        }
     }
+
+    .txt-plat {
+
+        h3,
+        p {
+            margin: 5px 0 0px 0;
+            max-width: 85%;
+
+        }
     }
-    .prx-plat p{
+
+    .prx-plat p {
         position: absolute;
         right: 10px;
         bottom: 20px;
         font-weight: 700;
         transition: all 0.800s;
     }
-    &:hover .prx-plat p{
+
+    &:hover .prx-plat p {
         right: 70px;
     }
 
-    &:hover .fa-check-circle{
+    &:hover .fa-check-circle {
         transform: rotate(360deg);
-        transform-origin: right 50% center;
-    
+       /* transform-origin: right 50% center;*/
+
     }
-    &:hover .anim-bg{
+
+    &:hover .anim-bg {
         transform-origin: right 100%;
         transform: scale(1, 1);
 
     }
-    .anim-bg{
+
+    &:hover {
+        h3 {
+            max-width: 75%;
+
+        }
+
+        p {
+            max-width: 65%;
+        }
+    }
+
+    .anim-bg {
         position: absolute;
         background: $terciaire-color;
-        padding: 30px 15px 30px 25px;
+        padding: 25px 20px 30px 20px;
         top: 0;
+        height: 100%;
         right: 0px;
         transform: translate(90px);
         transition: all 0.800s;
     }
 }
-.fa-check-circle{
-    position: relative;
+
+.rotation {
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.fa-check-circle {
     font-size: 1.5rem;
-    right: 5px;
-    bottom: 3px;
     color: #fff;
-    transition: all 1s;
+    transition: transform 1s;
+
 }

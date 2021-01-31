@@ -217,9 +217,12 @@ article .new {
 }
 article .fa-heart {
   position: absolute;
+  cursor: pointer;
   right: 30px;
   bottom: 30px;
   font-size: 1.5rem;
+  transition: all 0.8s;
+  background-color: linear-gradient(#FF79DA, #9356dc);
 }
 article p {
   margin-left: 10px;
@@ -316,7 +319,6 @@ footer .fas {
 }
 
 .plat {
-  display: flex;
   position: relative;
   background: #fff;
   margin: 12px 10px 14px 5px;
@@ -330,11 +332,15 @@ footer .fas {
   max-width: 100%;
   justify-content: space-between;
 }
-.plat .txt-plat h3, .plat .txt-plat p {
-  flex-wrap: nowrap;
+.plat .txt-plat p {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.plat .txt-plat h3,
+.plat .txt-plat p {
   margin: 5px 0 0px 0;
+  max-width: 85%;
 }
 .plat .prx-plat p {
   position: absolute;
@@ -348,29 +354,39 @@ footer .fas {
 }
 .plat:hover .fa-check-circle {
   transform: rotate(360deg);
-  transform-origin: right 50% center;
+  /* transform-origin: right 50% center;*/
 }
 .plat:hover .anim-bg {
   transform-origin: right 100%;
   transform: scale(1, 1);
 }
+.plat:hover h3 {
+  max-width: 75%;
+}
+.plat:hover p {
+  max-width: 65%;
+}
 .plat .anim-bg {
   position: absolute;
   background: #99E2D0;
-  padding: 30px 15px 30px 25px;
+  padding: 25px 20px 30px 20px;
   top: 0;
+  height: 100%;
   right: 0px;
   transform: translate(90px);
   transition: all 0.8s;
 }
 
+.rotation {
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
 .fa-check-circle {
-  position: relative;
   font-size: 1.5rem;
-  right: 5px;
-  bottom: 3px;
   color: #fff;
-  transition: all 1s;
+  transition: transform 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
