@@ -338,9 +338,6 @@ footer {
 
         }
     }
-    .anim1 {
-        
-    }
     .txt-plat {
 
         h3,
@@ -410,21 +407,66 @@ footer {
     transition: transform 1s;
 
 }
-.anim1, .anim2, .anim3{
+.anim1, .anim2, .anim3, .anim4, .anim5, .anim6, .anim7, .anim8, .anim9, .anim10{
     animation: slide-up 0.8s linear;
+
 }
 
 .anim1
 {
-    animation-delay: 0.1s;  
+
+   /* animation-delay: $animation-delay;  */
 }
 
 .anim2
 {
-    animation-delay: 0.3s;
+
+    animation-delay: $animation-delay + 0.3s;
 }
 
 .anim3
 {
-    animation-delay: 0.4s;
+  
+    animation-delay: $animation-delay + 0.6s;
+}
+
+.anim4
+{
+  
+    animation-delay: $animation-delay + 0.9s;
+}
+
+.anim5
+{
+  
+    animation-delay: $animation-delay + 1.2s;
+}
+
+.anim6
+{
+  
+    animation-delay: $animation-delay + 1.5s;
+}
+
+.anim7
+{
+  
+    animation-delay: $animation-delay + 1.8s;
+}
+
+.anim8
+{
+  
+    animation-delay: $animation-delay + 2.1s;
+}
+
+.anim9
+{
+  
+    animation-delay: $animation-delay + 2.3s;
+}
+.anim10
+{
+  
+    animation-delay: $animation-delay + 2.6s;
 }
