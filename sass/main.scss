@@ -2,6 +2,7 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/animations";
 @import "./base/base";
 @import "./base/typography";
 @import "./components/buttons";
@@ -200,7 +201,6 @@ article {
         font-size: 1.5rem;
         transition: all 0.8s;
         background-color: linear-gradient($linear);
-        &:hover {}
     }
 
     p {
@@ -338,7 +338,9 @@ footer {
 
         }
     }
-
+    .anim1 {
+        
+    }
     .txt-plat {
 
         h3,
@@ -407,4 +409,22 @@ footer {
     color: #fff;
     transition: transform 1s;
 
+}
+.anim1, .anim2, .anim3{
+    animation: slide-up 0.8s linear;
+}
+
+.anim1
+{
+    animation-delay: 0.1s;  
+}
+
+.anim2
+{
+    animation-delay: 0.3s;
+}
+
+.anim3
+{
+    animation-delay: 0.4s;
 }
