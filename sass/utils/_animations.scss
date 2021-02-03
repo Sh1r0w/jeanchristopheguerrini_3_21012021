@@ -1,0 +1,22 @@
+@keyframes slide-up {
+    from {
+        transform: translatey(15px);
+        opacity: 0;
+    }
+   /* 25%{
+        top:12px;
+        opacity: 0.1;
+    }
+    50%{
+        top: 10px;
+        opacity: 0.5;
+    }
+    78%{
+        top:5px;
+        opacity:0.8;
+    }*/
+    to{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
