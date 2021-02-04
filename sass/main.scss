@@ -503,15 +503,10 @@ footer {
         padding-top: 100%;
         padding-bottom: 100%;
         background: rgba(58, 57, 57, 0.3);
+        @include tablette{
+            width: 0;
+            height: 0;
+            left: 0;
+        }
     }
 }
-
-/*.fa-heart{
-    transition: color 0.2s ease-in-out;
-    &:hover{
-
-       background: linear-gradient($primary-color, $secondary-color);
-        -webkit-background-clip: text;
-        color:transparent;
-    }
-}*/
