@@ -193,14 +193,27 @@ article {
         font-weight: 500;
     }
 
-    .fa-heart {
+    /*.fa-heart,*/ .fa-stack {
         position: absolute;
         cursor: pointer;
-        right: 30px;
-        bottom: 30px;
+        right: 20px;
+        bottom: 15px;
         font-size: 1.5rem;
-        transition: all 0.8s;
-        background-color: linear-gradient($linear);
+        
+        &:hover{
+            animation: heart 0.3s ease-in 150ms;
+            animation-fill-mode:forwards;
+        }
+
+        &:hover .fas{
+            animation: heartcolor 0.3s ease-in-out;
+            animation-fill-mode:forwards;
+        }
+        .fas{
+            opacity: 0;
+            
+        }
+        
     }
 
     p {
@@ -276,8 +289,8 @@ footer {
         margin-right: 10px;
 
 
-        .fa-heart {
-            top: 35px;
+        .fa-heart, .fa-stack {
+            top: 15px;
         }
 
         h2 {
@@ -354,7 +367,7 @@ footer {
         right: 10px;
         bottom: 20px;
         font-weight: 700;
-        transition: all 0.800s;
+      transition: right 0.800s;
     }
 
     &:hover .prx-plat p {
@@ -488,6 +501,17 @@ footer {
         width: 100%;
         height: 100%;
         padding-top: 100%;
+        padding-bottom: 100%;
         background: rgba(58, 57, 57, 0.3);
     }
 }
+
+/*.fa-heart{
+    transition: color 0.2s ease-in-out;
+    &:hover{
+
+       background: linear-gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        color:transparent;
+    }
+}*/
