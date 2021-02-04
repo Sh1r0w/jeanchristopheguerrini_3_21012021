@@ -22,3 +22,15 @@ $animation-delay: 0.1s;
         opacity: 1;
     }
 }
+
+@keyframes load {
+    from{
+        visibility: initial;
+        color: linear-gradient($linearGradient);
+        
+    }
+    to{
+
+        color: linear-gradient($linearGradient);
+    }
+}
