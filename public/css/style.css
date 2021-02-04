@@ -22,6 +22,15 @@
     opacity: 1;
   }
 }
+@keyframes load {
+  from {
+    visibility: initial;
+    color: linear-gradient(to left, blue, red);
+  }
+  to {
+    color: linear-gradient(to left, blue, red);
+  }
+}
 body {
   font-family: "roboto", "sans-serif";
   display: flex;
@@ -36,6 +45,12 @@ h3 {
 
 .logofood, .titrefiche {
   font-family: Shrikhand, sans-serif;
+}
+
+.load {
+  font-family: Shrikhand, sans-serif;
+  font-weight: 800;
+  font-size: 32px;
 }
 
 .btn-commander, .btn-explore {
@@ -453,6 +468,18 @@ footer .fas {
 
 .anim10 {
   animation-delay: 2.7s;
+}
+
+.load {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(58, 57, 57, 0.5);
+  z-index: 2;
+  padding-top: 100%;
+  animation: load 1.5s linear;
 }
 
 /*# sourceMappingURL=style.css.map */
