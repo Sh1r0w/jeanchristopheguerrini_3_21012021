@@ -338,6 +338,7 @@ footer {
 
         }
     }
+
     .txt-plat {
 
         h3,
@@ -362,7 +363,7 @@ footer {
 
     &:hover .fa-check-circle {
         transform: rotate(360deg);
-       /* transform-origin: right 50% center;*/
+        /* transform-origin: right 50% center;*/
 
     }
 
@@ -407,78 +408,86 @@ footer {
     transition: transform 1s;
 
 }
-.anim1, .anim2, .anim3, .anim4, .anim5, .anim6, .anim7, .anim8, .anim9, .anim10{
+
+.anim1,
+.anim2,
+.anim3,
+.anim4,
+.anim5,
+.anim6,
+.anim7,
+.anim8,
+.anim9,
+.anim10 {
+    opacity: 0;
     animation: slide-up 0.8s linear;
+    animation-fill-mode: forwards;
 
 }
 
-.anim1
-{
+.anim1 {
 
-   /* animation-delay: $animation-delay;  */
+    animation-delay: $animation-delay;
 }
 
-.anim2
-{
+.anim2 {
 
     animation-delay: $animation-delay + 0.3s;
 }
 
-.anim3
-{
-  
+.anim3 {
+
     animation-delay: $animation-delay + 0.6s;
 }
 
-.anim4
-{
-  
+.anim4 {
+
     animation-delay: $animation-delay + 0.9s;
 }
 
-.anim5
-{
-  
+.anim5 {
+
     animation-delay: $animation-delay + 1.2s;
 }
 
-.anim6
-{
-  
+.anim6 {
+
     animation-delay: $animation-delay + 1.5s;
 }
 
-.anim7
-{
-  
+.anim7 {
+
     animation-delay: $animation-delay + 1.8s;
 }
 
-.anim8
-{
-  
+.anim8 {
+
     animation-delay: $animation-delay + 2.1s;
 }
 
-.anim9
-{
-  
+.anim9 {
+
     animation-delay: $animation-delay + 2.3s;
 }
-.anim10
-{
-  
+
+.anim10 {
+
     animation-delay: $animation-delay + 2.6s;
 }
 
-.load{
+.load {
     visibility: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
-    background: rgba(58, 57, 57, 0.5);
     z-index: 2;
-    padding-top: 100%;
-    animation: load 1.5s linear;
+    animation: load 1.5s ease-in-out;
+    .bg-load{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 100%;
+        background: rgba(58, 57, 57, 0.3);
+    }
 }
