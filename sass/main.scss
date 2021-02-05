@@ -91,10 +91,18 @@ header {
 /*-- fonctionnement --*/
 
 .fonctionnement {
-    margin-top: 28px;
+    margin: 28px 20px 40px 20px;
+    /*margin-top: 28px;
     margin-bottom: 40px;
-    margin-left: 20px;
-
+    margin-left: 20px;*/
+@include tablette{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    h2{
+        position: absolute;
+    }
+}
     h2 {
         padding-bottom: 10px;
     }
@@ -105,9 +113,12 @@ header {
     background: $bg-color;
     margin-bottom: 25px;
     padding: 10px;
-    width: 88%;
     border-radius: 20px;
     box-shadow: $shadow-box;
+    @include tablette{
+        width: 250px;
+        margin-top: 60px;
+    }
 
     .fa-circle {
         position: absolute;
@@ -193,7 +204,7 @@ article {
         font-weight: 500;
     }
 
-    /*.fa-heart,*/ .fa-stack {
+    .fa-stack {
         position: absolute;
         cursor: pointer;
         right: 20px;
@@ -445,47 +456,47 @@ footer {
 
 .anim2 {
 
-    animation-delay: $animation-delay + 0.3s;
+    animation-delay: $animation-delay + 0.2s;
 }
 
 .anim3 {
 
-    animation-delay: $animation-delay + 0.6s;
+    animation-delay: $animation-delay + 0.4s;
 }
 
 .anim4 {
 
-    animation-delay: $animation-delay + 0.9s;
+    animation-delay: $animation-delay + 0.6s;
 }
 
 .anim5 {
 
-    animation-delay: $animation-delay + 1.2s;
+    animation-delay: $animation-delay + 0.8s;
 }
 
 .anim6 {
 
-    animation-delay: $animation-delay + 1.5s;
+    animation-delay: $animation-delay + 1s;
 }
 
 .anim7 {
 
-    animation-delay: $animation-delay + 1.8s;
+    animation-delay: $animation-delay + 1.2s;
 }
 
 .anim8 {
 
-    animation-delay: $animation-delay + 2.1s;
+    animation-delay: $animation-delay + 1.4s;
 }
 
 .anim9 {
 
-    animation-delay: $animation-delay + 2.3s;
+    animation-delay: $animation-delay + 1.6s;
 }
 
 .anim10 {
 
-    animation-delay: $animation-delay + 2.6s;
+    animation-delay: $animation-delay + 1.8s;
 }
 
 .load {
@@ -495,18 +506,20 @@ footer {
     height: 100%;
     text-align: center;
     z-index: 2;
-    animation: load 1.5s ease-in-out;
+    animation: load 1.5s linear;
+    @include tablette{
+        left: 0;
+    }
     .bg-load{
         text-align: center;
         width: 100%;
         height: 100%;
-        padding-top: 100%;
+        padding-top: 350px;
         padding-bottom: 100%;
-        background: rgba(58, 57, 57, 0.3);
+        background: rgba(82, 81, 81, 0.3);
         @include tablette{
-            width: 0;
-            height: 0;
-            left: 0;
+            height:14%;
         }
+        
     }
 }

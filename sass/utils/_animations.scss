@@ -28,8 +28,7 @@ $animation-delay: 0.1s;
         color:transparent;
 
         }
-
-        50%
+        35%
         
         {
         background: linear-gradient(to left, $terciaire-color, $secondary-color);
@@ -37,7 +36,8 @@ $animation-delay: 0.1s;
         color:transparent;
 
         }
-        70%
+
+        50%
         
         {
         background: linear-gradient(to left, $secondary-color, $primary-color);
@@ -45,9 +45,17 @@ $animation-delay: 0.1s;
         color:transparent;
 
         }
+        70%
+        
+        {
+        background: linear-gradient(to left, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        color:transparent;
+
+        }
 
     to {
-        background: linear-gradient(to left, $primary-color, $secondary-color);
+        background: linear-gradient(to left, $secondary-color, $terciaire-color);
         -webkit-background-clip: text;
         color:transparent;
         
