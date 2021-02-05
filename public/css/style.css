@@ -391,7 +391,8 @@ footer .fas {
   margin-left: 10px;
   margin-right: 10px;
 }
-.carte .menu .fa-heart, .carte .menu .fa-stack {
+.carte .menu .fa-heart,
+.carte .menu .fa-stack {
   top: 15px;
 }
 .carte .menu h2 {
@@ -574,7 +575,7 @@ footer .fas {
 }
 @media screen and (min-width: 1000px) {
   .load .bg-load {
-    height: 14%;
+    padding-bottom: 0%;
   }
 }
 
