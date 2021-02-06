@@ -26,24 +26,24 @@ $animation-delay: 0.1s;
 @keyframes load {
     from {
 
-        transform: rotateX(90deg) translateZ(7.5vw);
+        transform: rotateX(55deg) translateZ(7.5vw);
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
         color: transparent;
+        
     }
 
     20% {
         background: linear-gradient(to left, $secondary-color, $terciaire-color);
         -webkit-background-clip: text;
         color: transparent;
-
     }
 
     35% {
         background: linear-gradient(to left, $terciaire-color, $secondary-color);
         -webkit-background-clip: text;
         color: transparent;
-
+        
     }
 
     50% {
@@ -52,24 +52,24 @@ $animation-delay: 0.1s;
         color: transparent;
         transform: rotateX(0deg) translateZ(7.5vw);
         transform-origin: bottom;
-        transform: scale(1.2, 0.2);
+
     }
 
     70% {
-        background: linear-gradient(to left, $primary-color, $secondary-color);
+        background: linear-gradient(to left, $terciaire-color, $secondary-color);
         -webkit-background-clip: text;
         color: transparent;
+        transform: scale(1.6, 0.2);
     }
 
     80% {
-        transform: scale(1);
+        ;
     }
 
     to {
-        background: linear-gradient(to left, $secondary-color, $terciaire-color);
+        background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
         color: transparent;
-
 
     }
 }
