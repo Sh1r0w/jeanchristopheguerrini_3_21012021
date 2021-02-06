@@ -20,7 +20,7 @@
 }
 @keyframes load {
   from {
-    transform: rotateX(55deg) translateZ(7.5vw);
+    transform: rotateX(190deg) translateZ(7.5vw);
     background: linear-gradient(to left, #9356dc, #FF79DA);
     -webkit-background-clip: text;
     color: transparent;
