@@ -1,7 +1,5 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 @import "./utils/animations";
 @import "./base/base";
 @import "./base/typography";
@@ -269,7 +267,8 @@ footer {
         font-size: 0.8rem;
         width: 4%;
         margin-right: 10px;
-        @include tablette{
+
+        @include tablette {
             margin-right: -10px;
         }
     }
