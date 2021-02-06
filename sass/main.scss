@@ -300,7 +300,7 @@ footer {
 
         .fa-heart,
         .fa-stack {
-            top: 15px;
+            top: 12px;
         }
 
         h2 {
@@ -318,7 +318,7 @@ footer {
     }
 
     .titrefiche {
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 400;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -339,6 +339,7 @@ footer {
     }
 }
 
+/* --Plat par menu-- */
 .plat {
     position: relative;
     background: #fff;
@@ -358,6 +359,7 @@ footer {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            transition: max-width 0.800s;
 
         }
     }
@@ -383,6 +385,8 @@ footer {
     &:hover .prx-plat p {
         right: 70px;
     }
+
+    /* --animation des plats-- */
 
     &:hover .fa-check-circle {
         transform: rotate(360deg);
@@ -410,7 +414,7 @@ footer {
     .anim-bg {
         position: absolute;
         background: $terciaire-color;
-        padding: 25px 20px 30px 20px;
+        padding: 0px 20px 30px 20px;
         top: 0;
         height: 100%;
         right: 0px;
@@ -419,17 +423,18 @@ footer {
     }
 }
 
+
+
 .rotation {
-    align-items: center;
-    margin: 0 auto;
     height: 100%;
+    display: grid;
 }
 
 .fa-check-circle {
     font-size: 1.5rem;
     color: #fff;
     transition: transform 1s;
-
+    margin: auto;
 }
 
 .anim1,
@@ -509,7 +514,8 @@ footer {
     @include tablette {
         left: 0;
     }
-    p{
+
+    p {
         position: absolute;
         top: 350px;
         width: 100%;
@@ -528,7 +534,7 @@ footer {
         background: rgba(223, 222, 222, 0.9);
 
         @include tablette {
-           padding-bottom: 0%;
+            padding-bottom: 0%;
         }
 
     }
