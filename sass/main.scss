@@ -318,7 +318,7 @@ footer {
     }
 
     .titrefiche {
-        font-size: 26px;
+        font-size: 25px;
         font-weight: 400;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -352,7 +352,7 @@ footer {
     flex-wrap: nowrap;
     overflow: hidden;
     max-width: 100%;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 
     .txt-plat {
         p {
@@ -390,8 +390,6 @@ footer {
 
     &:hover .fa-check-circle {
         transform: rotate(360deg);
-        /* transform-origin: right 50% center;*/
-
     }
 
     &:hover .anim-bg {
@@ -433,7 +431,7 @@ footer {
 .fa-check-circle {
     font-size: 1.5rem;
     color: #fff;
-    transition: transform 1s;
+    transition: transform 0.8s;
     margin: auto;
 }
 

@@ -421,7 +421,7 @@ footer .fas {
   margin-top: 15px;
 }
 .carte .titrefiche {
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 400;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -452,7 +452,7 @@ footer .fas {
   flex-wrap: nowrap;
   overflow: hidden;
   max-width: 100%;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   /* --animation des plats-- */
 }
 .plat .txt-plat p {
@@ -478,7 +478,6 @@ footer .fas {
 }
 .plat:hover .fa-check-circle {
   transform: rotate(360deg);
-  /* transform-origin: right 50% center;*/
 }
 .plat:hover .anim-bg {
   transform-origin: right 100%;
@@ -509,7 +508,7 @@ footer .fas {
 .fa-check-circle {
   font-size: 1.5rem;
   color: #fff;
-  transition: transform 1s;
+  transition: transform 0.8s;
   margin: auto;
 }
 
