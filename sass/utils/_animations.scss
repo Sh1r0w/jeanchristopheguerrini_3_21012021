@@ -1,7 +1,7 @@
 $animation-delay: 0.1s;
 
 @keyframes slide-up {
-    
+
     from {
         transform: translatey(15px);
         opacity: 0;
@@ -13,86 +13,99 @@ $animation-delay: 0.1s;
     }
 }
 
-@keyframes load {
+@keyframes load1 {
     from {
         visibility: initial;
+    }
+
+    to {
+        visibility: initial;
+    }
+}
+
+@keyframes load {
+    from {
+
+        transform: rotateX(90deg) translateZ(7.5vw);
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
-        color:transparent;
-        }
-        20%
-        
-        {
+        color: transparent;
+    }
+
+    20% {
         background: linear-gradient(to left, $secondary-color, $terciaire-color);
         -webkit-background-clip: text;
-        color:transparent;
+        color: transparent;
 
-        }
-        35%
-        
-        {
+    }
+
+    35% {
         background: linear-gradient(to left, $terciaire-color, $secondary-color);
         -webkit-background-clip: text;
-        color:transparent;
+        color: transparent;
 
-        }
+    }
 
-        50%
-        
-        {
+    50% {
         background: linear-gradient(to left, $secondary-color, $primary-color);
         -webkit-background-clip: text;
-        color:transparent;
+        color: transparent;
+        transform: rotateX(0deg) translateZ(7.5vw);
 
-        }
-        70%
-        
-        {
+
+    }
+    51%{
+        transform: scale(1, 0.2);
+    }
+
+    70% {
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
-        color:transparent;
-
-        }
-
+        color: transparent;
+        transform: scale(1);
+    }
     to {
         background: linear-gradient(to left, $secondary-color, $terciaire-color);
         -webkit-background-clip: text;
-        color:transparent;
-        
-        
+        color: transparent;
+
+
     }
 }
 
-@keyframes heartcolor{
-    from{
+@keyframes heartcolor {
+    from {
         opacity: 0.5;
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
-        color:transparent;
+        color: transparent;
     }
-    50%{
+
+    50% {
         opacity: 1;
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
-        color:transparent;
+        color: transparent;
     }
-    to{
+
+    to {
         opacity: 1;
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
-        color:transparent;
+        color: transparent;
     }
 }
 
-@keyframes heart{
-    from{
+@keyframes heart {
+    from {
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
-        color:transparent;
+        color: transparent;
     }
-    to{
+
+    to {
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
-        color:transparent;
+        color: transparent;
     }
 }
