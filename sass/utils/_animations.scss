@@ -51,11 +51,8 @@ $animation-delay: 0.1s;
         -webkit-background-clip: text;
         color: transparent;
         transform: rotateX(0deg) translateZ(7.5vw);
-
-
-    }
-    51%{
-        transform: scale(1, 0.2);
+        transform-origin: bottom;
+        transform: scale(1.2, 0.2);
     }
 
     70% {

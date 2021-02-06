@@ -40,9 +40,8 @@
     -webkit-background-clip: text;
     color: transparent;
     transform: rotateX(0deg) translateZ(7.5vw);
-  }
-  51% {
-    transform: scale(1, 0.2);
+    transform-origin: bottom;
+    transform: scale(1.2, 0.2);
   }
   70% {
     background: linear-gradient(to left, #9356dc, #FF79DA);
@@ -408,7 +407,7 @@ footer .fas {
 }
 .carte .menu .fa-heart,
 .carte .menu .fa-stack {
-  top: 15px;
+  top: 12px;
 }
 .carte .menu h2 {
   margin-left: 10px;
@@ -422,7 +421,7 @@ footer .fas {
   margin-top: 15px;
 }
 .carte .titrefiche {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 400;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -440,6 +439,7 @@ footer .fas {
   margin-bottom: 15px;
 }
 
+/* --Plat par menu-- */
 .plat {
   position: relative;
   background: #fff;
@@ -453,11 +453,13 @@ footer .fas {
   overflow: hidden;
   max-width: 100%;
   justify-content: space-between;
+  /* --animation des plats-- */
 }
 .plat .txt-plat p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: max-width 0.8s;
 }
 .plat .txt-plat h3,
 .plat .txt-plat p {
@@ -491,7 +493,7 @@ footer .fas {
 .plat .anim-bg {
   position: absolute;
   background: #99E2D0;
-  padding: 25px 20px 30px 20px;
+  padding: 0px 20px 30px 20px;
   top: 0;
   height: 100%;
   right: 0px;
@@ -500,15 +502,15 @@ footer .fas {
 }
 
 .rotation {
-  align-items: center;
-  margin: 0 auto;
   height: 100%;
+  display: grid;
 }
 
 .fa-check-circle {
   font-size: 1.5rem;
   color: #fff;
   transition: transform 1s;
+  margin: auto;
 }
 
 .anim1,
