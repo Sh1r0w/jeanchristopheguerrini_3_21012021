@@ -48,6 +48,8 @@
     background: linear-gradient(to left, #9356dc, #FF79DA);
     -webkit-background-clip: text;
     color: transparent;
+  }
+  80% {
     transform: scale(1);
   }
   to {
