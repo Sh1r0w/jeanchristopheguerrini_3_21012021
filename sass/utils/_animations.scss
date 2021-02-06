@@ -26,7 +26,7 @@ $animation-delay: 0.1s;
 @keyframes load {
     from {
 
-        transform: rotateX(55deg) translateZ(7.5vw);
+        transform: rotateX(190deg) translateZ(7.5vw);
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
         color: transparent;
