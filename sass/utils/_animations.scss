@@ -62,10 +62,6 @@ $animation-delay: 0.1s;
         transform: scale(1.6, 0.2);
     }
 
-    80% {
-        ;
-    }
-
     to {
         background: linear-gradient(to left, $primary-color, $secondary-color);
         -webkit-background-clip: text;
