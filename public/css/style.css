@@ -169,8 +169,8 @@ header {
 header .logofood {
   font-size: 32px;
   font-weight: 400;
-  margin-block-start: 0.4em;
-  margin-block-end: 0.1em;
+  margin-top: 0.4em;
+  margin-bottom: 0.1em;
 }
 header .fas {
   position: absolute;
